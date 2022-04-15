@@ -1,0 +1,33 @@
+.xyz
+        {
+        
+            font-family: 'Lobster', cursive;
+            font-size: 70px;
+        }
+   .Header .abc .xyz
+        {
+            font-size: 70px;
+            margin-top: 25px;
+            color: orange;
+            text-shadow: 4px 3px black;
+            
+
+        }
+        
+        
+        .abc img
+        {
+            margin-left: 150px;
+        }
+        
+        a
+        {
+            color: black !important;
+            font-size: 20px;
+        }
+#dropdownMenuLink{
+    height: 30px;
+    width: 50px;
+    font-size: 20px;
+}        
+    

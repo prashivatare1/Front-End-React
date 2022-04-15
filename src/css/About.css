@@ -1,0 +1,147 @@
+.xyz .about {
+    /* background: #eee; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+.xyz  .about .image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+.xyz  .about .image img {
+    width: 100%;
+    -webkit-box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+.xyz  .about .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+  }
+  
+.xyz  .about .content h3 {
+    font-size: 3rem;
+    color: #219150;
+  }
+  
+.xyz  .about .content p {
+    font-size: 1.5rem;
+    color: #10221b;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+
+  .xyz  .contacts{
+    border: solid;
+    border-width: 1px;
+  }
+  .xyz  .contacts .heading{
+      text-align: center;
+      font-weight: bold;
+      
+  }
+
+
+.xyz  .contacts .row{
+    display: flex;
+    /* background:var(--black); */
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.xyz .contacts .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+    height: 80%;
+}
+
+.about
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+
+h4{
+    text-align: center;
+    font-size: 50%;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    
+    font-size: 30%;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 0%;
+    
+}
+
+.xyz .testi {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.xyz .testi .box {
+    text-align: center;
+    background: var(--black);
+    color: var(--white);
+    padding: 20px;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    cursor: pointer;
+}
+.xyz .testi .box:hover {
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+.xyz .testi .row {
+    margin: 50px auto;
+}
+.xyz .testi .box img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 3px solid var(--white);
+}
+.xyz .testi .mid {
+    margin-top: 100px;
+}
+.xyz .testi .box i {
+    font-size: 35px;
+    color: wheat;
+}
+.xyz .testi .box h6 {
+    font-size: 20px;
+    font-weight: 700;
+    color: wheat;
+    margin: 5px auto;
+}
+
+.xyz .testi .box p{
+    color: whitesmoke;
+}
+
+h1
+{
+    font-weight: 600;
+    text-decoration: underline !important;
+}

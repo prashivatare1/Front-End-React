@@ -1,17 +1,75 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Cart from './components/Cart';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './js/script.js'
+
+
+import Home from './components/Home.js';
+import Facilities from './components/Facilities';
+import Activities from './components/Activities';
+import About from './components/About';
+import Rooms from './components/Rooms';
+import Packages from './components/Packages';
+import Login from './components/Login';
+import Register from './components/Register';
+import Next from './components/Next';
+import Admin from './components/Admin';
+import Enquiry from './components/Enquiry';
+import Book from './components/Book';
+
+import Invoice from './components/Invoice';
+
+import { CartProvider } from 'react-use-cart';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom"
+
+
+
+
+
+
+
+
+var content = (
+  <div>
+    <BrowserRouter>
+    <CartProvider>
+      <Header />
+      <Routes>
+
+        <Route path="/" element={<Home />} />
+        <Route path="/Facilities" element={<Facilities />} />
+        <Route path="/Activities" element={<Activities />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Rooms" element={<Rooms />} />
+        <Route path="/Packages" element={<Packages />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Next" element={<Next />} />
+        <Route path="/Admin" element={<Admin />} />
+        <Route path="/Enquiry" element={<Enquiry />} />
+        <Route path="/Book" element={<Book />} /> 
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/invoice" element={<Invoice />} />
+
+
+      </Routes>
+      <Footer />
+       </CartProvider>
+    </BrowserRouter>
+  </div>
+)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  content,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+

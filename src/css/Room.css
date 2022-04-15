@@ -1,0 +1,59 @@
+
+.room {
+    
+    }
+    
+    .imgagecol {
+        border: solid whitesmoke;
+        margin-top: 25px;
+    
+    }
+    
+    h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        text-decoration-style: solid;
+        font-size: 24px;
+        color: black;
+    }
+    
+    h3 {
+        font-size: 18px;
+        color:purple;
+        font-weight: 700 !important;
+    }
+    
+    h4 {
+        font-size: 18px;
+        color: green;
+        
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    .btn2 {
+        margin-left: 40%;
+    }
+    .room
+    {
+        align: left;
+    }
+    .description
+    {
+        font-size: 18px;
+    }
+    hr
+    {
+        border: 1px solid black;
+    }
+    .amenities
+    {
+        font-size: 10px;
+    }
+
+    .image-amenties
+    {
+        margin-left: 32px ;
+    }

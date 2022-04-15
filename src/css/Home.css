@@ -1,0 +1,340 @@
+.carousel .item {
+    height: 300px;
+  }
+  .description
+  {
+      color: #219150 !important;
+      font-weight: 700 !important;
+  }
+  
+  .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+  }
+  .Heder{
+      text-align: center;
+      font-size: xxx-large;
+      color: black;
+      font-weight: bold;
+  }
+
+  
+
+  h4{
+      color: antiquewhite;
+  }
+
+  .Home .products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.Home .products .box-container .box{
+    text-align: center;
+    border:var(--border);
+    padding: 2rem;
+    background-color: rgb(211, 194, 194);
+    border-radius: 6%;
+   
+
+}
+
+.Home .products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border:var(--border);
+    color:#fff;
+    margin:.3rem;
+}
+
+.Home .products .box-container .box .icons a:hover{
+    background:gray;
+}
+
+.Home .products .box-container .box .image{
+    padding: 2.5rem 0;
+    
+    
+
+}
+
+.Home .products .box-container .box .image img{
+    height: 25rem;
+    border-radius: 6%;
+  
+}
+
+.Home .products .box-container .box .content h3{
+    color:#3500e4;
+    font-size: 2.5rem;
+    font-weight: 900 !important;
+}
+
+.Home .products .box-container .box .content .stars{
+    padding: 1.5rem;
+}
+
+.Home .products .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.Home .products .box-container .box .content .price{
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.Home .products .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+
+/* .Home .services {
+    background: #eee;
+  } */
+  
+.Home  .services .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+.Home  .services .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    border: 0.2rem solid #10221b;
+    border-radius: .5rem;
+    background: #fff;
+  }
+  
+.Home  .services .box-container .box:hover {
+    background: #10221b;
+  }
+  
+.Home  .services .box-container .box:hover img {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  
+.Home  .services .box-container .box:hover p {
+    color: #fff;
+  }
+  
+.Home  .services .box-container .box:hover .btn {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+.Home  .services .box-container .box:hover .btn:hover {
+    background: #fff;
+    color: #10221b;
+  }
+  
+.Home  .services .box-container .box img {
+    height: 10rem;
+    margin-bottom: 1rem;
+  }
+  
+.Home  .services .box-container .box h3 {
+    font-size: 2rem;
+    color: #219150;
+  }
+  
+.Home  .services .box-container .box p {
+    font-size: 1.5rem;
+    color: #10221b;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+
+.Home  .review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    
+}
+
+.Home .review .box-container .box{
+    border:var(--border);
+    text-align: center;
+    padding:3rem 2rem;
+    background-color: black;
+}
+
+.Home .review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:#ccc;
+    padding:2rem 0;
+}
+
+.Home .review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Home .review .box-container .box h3{
+    padding:1rem 0;
+    font-size: 2rem;
+    color:#fff;
+}
+
+.Home .review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color:var(--main-color);
+}  
+
+.Home  .patners .share img{
+    padding:1rem 0;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    padding:1rem 0;
+    height: 14rem;
+    margin-left: 8%;
+   
+ }
+
+/* Service Section Start*/
+.Home .service-item-wrap {
+    background-color: rgba(252, 249, 244, 0.815);
+}
+.Home .service-menu-area ul li a {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.Home .service-menu-area ul li a .service-icon {
+    height: 5.625rem;
+    width: 5.625rem;
+    background-color: rgb(114, 114, 93);
+    line-height: 5.625rem;
+    text-align: center;
+    border-radius: 100%;
+    float: left;
+    -webkit-transition:all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.Home .service-menu-area ul li a .service-icon:hover,
+.Home .service-menu-area ul li a.active .service-icon {
+    background-color: #021832;
+    color: var(--white); 
+    box-shadow: 0.125rem rgb(34, 30, 31 / 40%);
+}
+.Home .service-menu-area ul li:nth-child(1) {
+    margin-left: 0.5625rem;
+}
+.Home .service-menu-area ul li:nth-child(2) {
+    margin-left: -2.9375rem;
+}
+.Home .service-menu-area ul li:nth-child(3) {
+    margin-left: -6.375rem;
+}
+.Home .service-menu-area ul li:nth-child(4) {
+    margin-left: -8.8125rem;
+}
+.Home .service-menu-area ul li a p,
+.Home .service-menu-area ul li a h5 {
+    padding-left: 6.875rem;
+    display: block;
+    text-align: left;
+} 
+.Home .service-menu-area ul li a p span {
+    color: red;
+}
+.Home .counter {
+    background-image: url('');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px;
+    position: relative;
+}
+.Home .counter::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    opacity: 0.5;
+    z-index: 1;
+}
+.Home .counter h1, 
+.Home .counter p {
+    position: relative;
+    z-index: 3;
+    color: var(--white);
+}
+
+.description
+{
+    color: #10221b;
+    font: 200;
+    font-size: medium;
+}
+
+.slogan
+{
+    color: whitesmoke;
+    font-size: 55px;
+    text-shadow: 7px 3px black;
+}
+.desription
+{
+    color: whitesmoke;
+    font-weight: 500;
+    text-shadow: 2px 2px black;
+}
+
+.Heading-a
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    color: #3500e4;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+.Heading-b
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    color: red;
+    font-size: 50px;
+    text-shadow: 2px 2px rgb(174, 174, 174);
+}
+.Heading-c
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: #219150;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+.Heading-d
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: blueviolet;
+    text-shadow: 2px 2px rgb(174, 174, 174);
+}
+.tshome
+{
+    width:100% !important;
+    height: 500px !important;
+}
+
+/* Service Section End*/ 
