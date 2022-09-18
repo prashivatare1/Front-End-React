@@ -53,9 +53,9 @@ export default class Header extends Component {
               <Link class='nav-link' to='/Enquiry'>Contact</Link> &nbsp;&nbsp;&nbsp;
               </li>
 
-             <li class="nav-item">
+             {/* <li class="nav-item">
              <Link class='nav-link' to="/Login"> Login </Link>
-              </li>
+              </li> */}
 
               <li class="nav-item">
              <Link class='nav-link' to="/Admin"> Admin </Link>
@@ -65,9 +65,9 @@ export default class Header extends Component {
              <Link to="/cart"> <i class="fas fa-shopping-cart"/> </Link>
               </li>
 
-              <li class="nav-item">
+              {/* <li class="nav-item">
                <Link to="/invoice">Invoice</Link>
-              </li>
+              </li> */}
 
                   </ul>
 

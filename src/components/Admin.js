@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../css/Admin.css'
 import axios from 'axios'
+import { toBeChecked } from '@testing-library/jest-dom/dist/matchers';
 
 export default class  extends Component {
   constructor(){
@@ -17,19 +18,35 @@ export default class  extends Component {
     // console.log(this.x2);
 
 
-  var  dataForNodejs = {
-      Username:this.x1.current.value,
-      Password:this.x2.current.value
-    }
-    console.log(dataForNodejs);
-    console.log(axios)
+ // var  dataForNodejs = {
+   //  Username:this.x1.current.value,
+     // Password:this.x2.current.value
+    //}
+    //console.log(dataForNodejs);
+    //console.log(axios)
      
-    var ans_axios = axios.post('',dataForNodejs)
-    console.log(ans_axios);
+    //var ans_axios = axios.post('',dataForNodejs)
+    //console.log(ans_axios);
 
-    ans_axios.then((res)=>{
-      console.log(res.data);
-    })
+   //ans_axios.then((res)=>{
+     //console.log(res.data);
+    this.check();
+    
+    
+  }
+  check()
+  {
+    if(this.x1.current.value == "admin" && this.x2.current.value =="admin123")
+    {
+      alert("Valid User");
+      window.location="http://localhost:3000/invoice";
+    }
+    else
+    {
+      alert("Invalid User");
+      window.location="http://localhost:3000/Register";
+      
+    }
   }
 
   

@@ -2,6 +2,9 @@ import {useCart} from 'react-use-cart';
 import '../css/Invoice.css'
  function Invoice()
  {
+    
+        
+       
 
     const{
         isEmpty,
@@ -14,6 +17,33 @@ import '../css/Invoice.css'
         emptyCart,
     } = useCart();
 
+    function myfunc(ev){
+   
+        //ev.preventDefault();
+        localStorage.clear();
+        alert("Visit Again ....!");
+      window.location="http://localhost:3000";
+    }
+    
+    //var abc =JSON.parselocalStorage.getItem('customerObj')
+      // console.log(abc[0])
+    var  test = JSON.parse(localStorage.getItem('customerObj'));
+     console.log(test[0].customerId);
+     console.log(test);
+
+
+     const current = new Date();
+    const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
+
+
+
+    //localStorage.setItem("invoice",abc);
+    //var x =localStorage.getItem('invoice');
+    //console.log(x[0].zip);   
+    //localStorage.setItem('custid' ,invoice[0].customerId)
+       //console.log(c);
+      
+       
      return(
 
         <div class="container">
@@ -46,21 +76,25 @@ import '../css/Invoice.css'
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <address class="text-right name">
-                                            Maxwell admin Inc, 45 NorthWest Street.<br/>
-                                            Sunrise Blvd, San Francisco.<br/>
-                                            00000 00000
+                                       {test[0].customerId}  <br/>
+                                             {test[0].address}<br/>
+                                            {test[0].mobile}
                                         </address>
+                                        <h1>  </h1>
                                     </div>
                                 </div>
-                                 
+
+                                {/* var abc =localStorage.getItem(customerObj[0].customerId); */}
+                                {/* console.log(abc); */}
+                                
         
                                  
                                 <div class="row gutters">
                                     <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
                                         <div class="invoice-details">
                                             <address class="name">
-                                                Alex Maxwell<br/>
-                                                150-600 Church Street, Florida, USA
+                                                {test[0].firstName} {test[0].lastName}<br/>
+                                                {test[0].address} <br/> {test[0].city}, {test[0].zip} 
                                             </address>
                                         </div>
                                     </div>
@@ -68,7 +102,7 @@ import '../css/Invoice.css'
                                         <div class="invoice-details">
                                             <div class="invoice-num">
                                                 <div class="name">Invoice - #009</div>
-                                                <div class="name">January 10th 2020</div>
+                                                <div class="name">{date}</div>
                                             </div>
                                         </div>													
                                     </div>
@@ -132,6 +166,8 @@ import '../css/Invoice.css'
         
                         </div>
                     </div>
+                    <button class="btn btn-primary" onClick={myfunc}>LOG OUT</button>
+                    <br/>
                 </div>
             </div>
         </div>

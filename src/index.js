@@ -29,6 +29,7 @@ import {
   Routes,
   Route
 } from "react-router-dom"
+import Payment from './components/Payment';
 
 
 
@@ -58,7 +59,7 @@ var content = (
         <Route path="/Book" element={<Book />} /> 
         <Route path="/cart" element={<Cart />} />
         <Route path="/invoice" element={<Invoice />} />
-
+        <Route path="/payment" element={<Payment />} />
 
       </Routes>
       <Footer />

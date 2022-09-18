@@ -28,7 +28,7 @@ export default class extends Component {
     
       var  dataForNodejs = {
           firstName:this.x1.current.value,
-          middelname:this.x2.current.value,
+          middelName:this.x2.current.value,
           lastName:this.x3.current.value,
           gender:this.x4.current.value,
           mobile:this.x5.current.value,
@@ -41,7 +41,7 @@ export default class extends Component {
         console.log(dataForNodejs);
         console.log(axios)
          
-        var ans_axios = axios.post('http://localhost:8055/savecustomer',dataForNodejs)
+        var ans_axios = axios.post('http://localhost:8055/customer/savecustomer',dataForNodejs)
         console.log(ans_axios);
 
         
@@ -49,6 +49,8 @@ export default class extends Component {
         ans_axios.then((res)=>{
           console.log(res.data);
           alert("Successfully Registered");
+        
+          window.location="http://localhost:3000/login";
         })
       }
     

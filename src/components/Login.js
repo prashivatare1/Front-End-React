@@ -2,12 +2,21 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../css/login.css'
+import { validateElement } from 'react-modal/lib/helpers/ariaAppHider';
 
 export default class   extends Component {
   constructor(){
     super();
     this.x1 = React.createRef();
     this.x2 = React.createRef();
+    
+    this.state={
+      test:''
+
+    }
+
+
+    
   }
   myfunc(ev){
    
@@ -28,17 +37,53 @@ export default class   extends Component {
 
     ans_axios.then((res)=>{
       console.log(res.data);
-       sessionStorage.setItem('data',JSON.stringify(res.data) );
-      console.log(sessionStorage);
-      this.myfun2();
+      localStorage.setItem('customerObj',JSON.stringify(res.data) );
+     // console.log(sessionStorage);
+       var customerString = JSON.parse(localStorage.getItem('customerObj'));
+       console.log(customerString);
+      
+       if(customerString.length === 0)
+        { this.state.test = 0}
+      else
+        { this.state.test =1 }
+        console.log(this.state.test);
+
+      //    localStorage.setItem('custid',customerString[0].customerId);
+      // localStorage.setItem('custfirstname',customerString[0].firstName);
+      //  localStorage.setItem('custmiddlename',customerString[0].middleName);
+      //  localStorage.setItem('custlastname',customerString[0].lastName);
+      //  localStorage.setItem('custemail',customerString[0].emailId);
+      //  localStorage.setItem('mobile',customerString[0].mobile);
+      //  localStorage.setItem('address',customerString[0].address);
+      //  localStorage.setItem('city',customerString[0].city);
+      //   localStorage.setItem('zip',customerString[0].zip);
+
+     
+
+      //this.myfun2();
+      this.check();
     })
   }
 
-    myfun2()
+    // myfun2()
+    // {
+    //   alert("Login Successfull");
+    //   window.location.href = "http://localhost:3001/";
+    // }
+  check()
+  {
+    if(this.state.test==1)
     {
-      alert("Login Successfull");
-      window.location.href = "http://localhost:3001/";
+      alert("Valid User");
+      window.location="http://localhost:3000/payment";
     }
+    else if(this.state.test==0)
+    {
+      alert("Invalid User");
+      window.location="http://localhost:3000/Register";
+      
+    }
+  }
 
 
 

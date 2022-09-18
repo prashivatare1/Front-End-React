@@ -98,7 +98,7 @@ export default class extends Component {
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="box">
-                                    <img src="/images/feedback/image1.jpg" class="img-fluid" alt="" /><br />
+                                    <img src="/images/guarav.jpg" class="img-fluid" alt="" /><br />
                                     
                                     <h6>Gaurav Nikam</h6>
                                     <p>Really it’s our favorite place for relaxation where we enjoy nature & food at the same 😊
@@ -109,7 +109,7 @@ export default class extends Component {
 
                             <div class="col-sm-4 mid">
                                 <div class="box">
-                                    <img src="/images/feedback/images.jpg" class="img-fluid" alt="" /><br />
+                                    <img src="/images/prerana.jpg" class="img-fluid" alt="" /><br />
                                     
                                     <h6>Prerana Salunke</h6>
                                     <p>It was a fantabulous experience yesterday at Sinhagad Farm. People’s enjoyed a lot especially
@@ -119,7 +119,7 @@ export default class extends Component {
 
                             <div class="col-sm-4">
                                 <div class="box">
-                                    <img src="/images/feedback/image2.jpg" class="img-fluid" alt="" /><br />
+                                    <img src="/images/pradyumna.jpg" class="img-fluid" alt="" /><br />
                                     
                                     <h6>Pradyumna Shivtare</h6>
                                     <p>The service was excellent and the food was incredible and delicious. All your staff was very

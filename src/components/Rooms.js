@@ -27,7 +27,7 @@ function Rooms() {
                                 roomphotos = {room.roomPhotos}
                                 roomType = {room.roomType}
                                 description = {room.description}
-                                adults = {room.adluts}
+                                adluts = {room.adluts}
                                 child = {room.child}
                                 price = {room.price}
                                 room = {room}
